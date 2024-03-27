@@ -40,11 +40,11 @@ const ProductCard = ({ details, addToCart }) => {
                   {Math.ceil(30)}% Off
                 </span>
               )}
-              {!d.availableQty > 0 ? (
+              {d.availableQty > 2 ? (
                 ""
               ) : (
                 <span className="absolute inline-flex items-center justify-center px-2 py-1 bg-red-100 text-red-600 border-0 rounded-full text-xs font-semibold z-10 left-4 top-4">
-                  Stock Out
+                  {d.availableQty < 1 ? "out of Stock" : "Limited Stock"}
                 </span>
               )}
 
