@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Slab&family=Roboto:wght@700&family=Rubik:wght@500&family=Ubuntu&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply font-medium hover:underline-offset-2 text-sm md:text-lg hover:underline hover:text-blue-800;
+  }
+  .normal_btn {
+    @apply py-2 px-6 shadow-md bg-orange-500 hover:bg-orange-700 font-ubuntu text-lg text-white rounded-sm;
+  }
+  .view_btn {
+    @apply font-medium rounded-sm flex items-center justify-center space-x-1 py-2 px-3 bg-yellow-600 text-white hover:bg-yellow-700 hover:scale-110;
+  }
+  .delete_btn {
+    @apply font-medium rounded-sm flex items-center justify-center space-x-1 py-2 px-3 bg-red-600 text-white hover:bg-red-800 hover:scale-110;
+  }
+  .table {
+    @apply border-collapse border border-gray-500 w-full text-sm text-left text-gray-500;
+  }
+  .table_head {
+    @apply text-base font-firasans text-white bg-indigo-800/80 uppercase;
+  }
+
+  .table_heading {
+    @apply py-4 px-6 border-2 border-gray-700 text-center;
+  }
+  .table_body_tr {
+    @apply bg-white text-center font-firasans hover:bg-blue-200/80 cursor-pointer odd:bg-gray-200 even:bg-white;
+  }
+  .table_data {
+    @apply py-4 px-6 border-2 border-gray-700 text-center;
+  }
+  .input_field {
+    @apply w-full border-2 rounded-md my-1 border-orange-500 outline-gray-600 py-2 px-4 font-firasans text-lg;
+  }
+  .label {
+    @apply font-firasans text-base;
+  }
+}
+
+.stepper__step {
+  border: 2px solid rgb(23, 2, 52) !important;
+}
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.category-slider button.prev {
+  background-color: #f97316;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  background-color: #f97316;
+  color: #fff !important;
+  border-radius: 3px !important;
+  font-size: 100% !important;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+.swiper-button-prev {
+  left: 0px !important;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(46, 154, 60);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/about.webp");
+  background-position: top;
+  opacity: 5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
